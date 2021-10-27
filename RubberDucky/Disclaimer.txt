@@ -1,0 +1,9 @@
+Disclaimer:
+
+The Desktop Goose files are not my own - they were created by Sam Chiet
+--
+twitter.com/samnchiet
+patreon.com/sammakesvr
+--
+
+The Desktop Goose application was used in the USB Rubber Ducky Demonstration for the CyberTech Awareness Program by the github user mirpag, and is used for educational purposes only. 
